@@ -134,41 +134,42 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 0 2px 7px 3px #949ca5;
   position: relative;
 }
 
-.albums::before, .artists::before, .playlist::before {
+.card::before {
   content: '';
   display: block;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 80px 80px 0 0;
-  border-color: #f9eccd transparent transparent transparent;
+  border-color: #c49a6a transparent transparent transparent;
   box-shadow: -1px -1px 1px rgba(50, 50, 50, 0.1);
   position: absolute;
   left: -15px;
   top: -15px;
 }
 
-.albums::after, .artists::after, .playlist::after {
+.card::after {
   content: '';
   display: block;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 0 80px 80px;
-  border-color: transparent transparent #f9eccd transparent;
+  border-color: transparent transparent #c49a6a transparent;
   box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.1);
   position: absolute;
   right: -15px;
   bottom: -15px;
 }
 
-.card {
-  margin: 1rem;
-  box-shadow: 0 2px 7px 3px #949ca5;
-}
 
 .card .card-image-link {
   padding: 1rem;
